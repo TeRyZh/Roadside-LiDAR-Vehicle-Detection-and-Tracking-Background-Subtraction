@@ -8,3 +8,6 @@ Background Subtraction for Infrastructure Based LiDAR Object Detection
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/LiDAR_Object_Detection.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+
+[embed]https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/LiDAR_Object_Detection.pdf[/embed]
