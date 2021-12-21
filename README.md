@@ -1,8 +1,6 @@
-# Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction
+# Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction (Under Construction)
 
 <!-- <image src="./LiDAR_Object_Detection.pdf" type = "application/pdf" /> -->
-
-## This Repo is Under Construction
 
 <object data="https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/LiDAR_Object_Detection.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/LiDAR_Object_Detection.pdf">
