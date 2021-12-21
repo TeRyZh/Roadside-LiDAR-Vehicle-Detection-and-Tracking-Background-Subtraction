@@ -7,3 +7,7 @@
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/LiDAR_Object_Detection.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+### LiDAR Detected Trajectory vs Video Detected Trajectory
+
+![LiDAR Detected Trajectory vs Video Detected Trajectory](https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/images/LIDAR%20and%20Video%20Trajectory.png?raw=true)
