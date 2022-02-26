@@ -13,3 +13,5 @@
 ![LiDAR Detected Trajectory vs Video Detected Trajectory](https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/images/LIDAR%20and%20Video%20Trajectory.png?raw=true)
 
 <img align="center" width="50%" src="https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/images/BakersBasin_LiDAR_Detection.gif">
+
+<img align="center" width="50%" src="https://raw.githubusercontent.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/main/images/George%40Albany.gif">
