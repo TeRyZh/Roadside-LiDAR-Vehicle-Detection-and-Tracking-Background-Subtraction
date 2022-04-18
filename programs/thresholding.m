@@ -1,10 +1,9 @@
 function thrld_value=thresholding(distances)
 
 %     INPUTS
-%         graylevelIM :   gray level image
+%         distances :   Rnage for Elevation-Azimuth Matrix
 %     OUTPUT
-%         ubBackInt   :   upperbound threshold value in the range [0 1];
-%         lbBackInt   :   lowerbound threshold value in the range [0 1];
+%         Threshold Value to separate Foreground and Background
 
 %     Triangle algorithm
 %     This technique is due to Zack (Zack GW, Rogers WE, Latt SA (1977), 
