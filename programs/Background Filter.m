@@ -6,7 +6,7 @@ myFiles = dir(fullfile(myDir,'*.pcap')); %gets all wav files in struct
 % veloReader = velodyneFileReader('D:\Dropbox\LiDAR_Data\VLP32c_0Degree162inch_FieldTest_2_ConstructionSite.pcap','VLP32C');
 % veloReader = velodyneFileReader([lidar_file_name '.pcap'],'VLS128');
 
-% use the range threshold matrix to filter out foreground LiDAR points
+% use the range threshold matrix to filter out background LiDAR points
 
 %%
 xlimits = [-150 150];
