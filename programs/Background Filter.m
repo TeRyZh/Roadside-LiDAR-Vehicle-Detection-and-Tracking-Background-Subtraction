@@ -5,6 +5,9 @@ myFiles = dir(fullfile(myDir,'*.pcap')); %gets all wav files in struct
 
 % veloReader = velodyneFileReader('D:\Dropbox\LiDAR_Data\VLP32c_0Degree162inch_FieldTest_2_ConstructionSite.pcap','VLP32C');
 % veloReader = velodyneFileReader([lidar_file_name '.pcap'],'VLS128');
+
+% use the range threshold matrix to filter out foreground LiDAR points
+
 %%
 xlimits = [-150 150];
 ylimits = [-150 150];
@@ -38,7 +41,6 @@ load('range_thrld_matrix.mat');
 % ax = axes('Parent',uipanel);
 % axis([-100 50 -50 100]);
 
-frames = [200, 400, 600, 800, 1000, 1500, 2000];
 %%
 
 frame_num = 1;
@@ -105,13 +107,13 @@ for k = 1:length(myFiles)
             
         end
         
-        dmd_range_filtered_x = roi_filtered_x(back_idxes == 0);
-        dmd_range_filtered_y = roi_filtered_y(back_idxes == 0);
-        dmd_range_filtered_z = roi_filtered_z(back_idxes == 0);
-        dmd_range_filtered_intensities = intensities(back_idxes == 0);
+        range_filtered_x = roi_filtered_x(back_idxes == 0);
+        range_filtered_y = roi_filtered_y(back_idxes == 0);
+        range_filtered_z = roi_filtered_z(back_idxes == 0);
+        range_filtered_intensities = intensities(back_idxes == 0);
         
-        ptCloud_filtered.Location = [dmd_range_filtered_x, dmd_range_filtered_y, dmd_range_filtered_z];
-        ptCloud_filtered.Intensity = dmd_range_filtered_intensities;
+        ptCloud_filtered.Location = [range_filtered_x, range_filtered_y, range_filtered_z];
+        ptCloud_filtered.Intensity = range_filtered_intensities;
         
         ptCloud_obj = pointCloud(ptCloud_filtered.Location, 'Intensity', ptCloud_filtered.Intensity);
     
@@ -128,38 +130,8 @@ for k = 1:length(myFiles)
         view(player2, ptCloudOut.Location, ptCloudOut.Intensity);
 
         lidarData{end + 1}= ptCloud_obj;   
-
-        if  ismember(frame_num, frames)
-
-            str_e = sprintf('George@Albany_CFTA_frame_%d.ply',frame_num);
-            pcwrite(ptCloud_obj, str_e);
-
-            str_2 = sprintf('George@Albany_CFTA_original_frame_%d.ply',frame_num);
-            pcwrite(ptCloudObj, str_2);
-
-        end
     
         frame_num = frame_num + 1;
-        
-
-    %     if (frame_num > total_frame)
-    %         
-    % %         str_raw_lidar = sprintf('raw_lidarData');
-    % %         save(str_raw_lidar, 'raw_lidarData');
-    % 
-    %         str_lidarData = sprintf([lidar_file_name 'filtered_LiDAR_Data.mat']);
-    %         save(str_lidarData, 'lidarData');
-    %         
-    %         break;
-    %     end
-        
-    %     if (frame_num < 20)
-    %         continue;
-    %     end
-    
-    %     range_img = pointcloud2image(frame_x', frame_y', frame_z', numr_range, numc_range);
-    %     figure
-    %     imshow(range_img);
         
     end
 
