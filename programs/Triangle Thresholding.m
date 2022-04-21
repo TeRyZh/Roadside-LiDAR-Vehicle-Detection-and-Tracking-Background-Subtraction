@@ -127,3 +127,8 @@ for i = 1 : total_channel
     end 
     
 end
+
+%%
+% The output : range_thrld_matrix  is a threshold matrix for each elevation-azimuth unit
+
+
