@@ -1,7 +1,7 @@
 addpath('E:\GeorgeSt_Velodyne\Albany@George0730') 
 % veloReader = velodyneFileReader('DATA_20220120_161000.pcap','VLS128');
 myDir = 'E:\GeorgeSt_Velodyne\Albany@George0730';
-myFiles = dir(fullfile(myDir,'*.pcap')); %gets all wav files in struct
+myFiles = dir(fullfile(myDir,'*.pcap')); %gets all pcap files in struct
 
 % veloReader = velodyneFileReader('D:\Dropbox\LiDAR_Data\VLP32c_0Degree162inch_FieldTest_2_ConstructionSite.pcap','VLP32C');
 % veloReader = velodyneFileReader([lidar_file_name '.pcap'],'VLS128');
