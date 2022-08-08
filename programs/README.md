@@ -1,5 +1,9 @@
 This folder contains functions developed for LiDAR background subtraction
 
+0. Before running the Algorithms, you need to prepare *beams_elevation.mat* and *George_st_ROI.png* for your own LiDAR data. 
+1. Run *Triangle Thresholding.m* to obtain the *range_thrld_matrix.mat* that stored the threshold value for each elevation-azimuth grid
+2. Run *Background Filter.m* to filter out background and only preserve the foreground points. 
+
 
 
 [LiDAR Data Download Link](https://drive.google.com/file/d/167fXezNrgCpFmZod3yZwJsxRtyh0HfOx/view?usp=sharing)
