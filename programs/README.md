@@ -3,7 +3,7 @@ This folder contains functions developed for LiDAR background subtraction
 #### Step 0. Before running the Algorithms, you need to prepare *beams_elevation.mat* and *George_st_ROI.png* for your own LiDAR data. 
 - a. if you don't use Region-of-Interest (ROI), you need to comment out the following line of code. It doesn't impact the detection results. 
 ~~~
-   [ptCloud_roi_filtered] = roi_filter(ptCloudOut,roi_mask); )
+   [ptCloud_roi_filtered] = roi_filter(ptCloudOut,roi_mask); 
 ~~~
 - b. *beams_elevation.mat* is Vertical Angles (ω) by Laser ID and Model, which can be found in the LiDAR Manual.
 
