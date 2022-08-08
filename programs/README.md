@@ -1,13 +1,13 @@
 This folder contains functions developed for LiDAR background subtraction
 
-0. Before running the Algorithms, you need to prepare *beams_elevation.mat* and *George_st_ROI.png* for your own LiDAR data. 
+Step 0. Before running the Algorithms, you need to prepare *beams_elevation.mat* and *George_st_ROI.png* for your own LiDAR data. 
 - a. if you don't use Region-of-Interest (ROI), you need to comment out the following line of code. It doesn't impact the detection results. 
 ~~~
    [ptCloud_roi_filtered] = roi_filter(ptCloudOut,roi_mask); )
 ~~~
 - b. *beams_elevation.mat* is Vertical Angles (ω) by Laser ID and Model, which can be found in the LiDAR Manual.
-1. Run *Triangle Thresholding.m* to obtain the *range_thrld_matrix.mat* that stored the threshold value for each elevation-azimuth grid
-2. Run *Background Filter.m* to filter out background and only preserve the foreground points. 
+Step 1. Run *Triangle Thresholding.m* to obtain the *range_thrld_matrix.mat* that stored the threshold value for each elevation-azimuth grid
+Step 2. Run *Background Filter.m* to filter out background and only preserve the foreground points. 
 
 
 
