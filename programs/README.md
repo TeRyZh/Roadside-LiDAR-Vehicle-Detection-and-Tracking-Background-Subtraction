@@ -11,6 +11,8 @@ This folder contains functions developed for LiDAR background subtraction
 
 #### Step 2. Run *Background Filter.m* to filter out background and only preserve the foreground points. 
 
+#### Step 3. Run *detectGIF.m* to generate bounding box detection. 
+
 
 
 ## Data Sample from Velody Prime 
