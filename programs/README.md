@@ -9,7 +9,7 @@ This folder contains functions developed for LiDAR background subtraction
 
 #### Step 1. Run *Triangle Thresholding.m* to obtain the *range_thrld_matrix.mat* that stored the threshold value for each elevation-azimuth grid
 
-#### Step 2. Run *Background Filter.m* to filter out background and only preserve the foreground points. 
+#### Step 2. Run *Background Filter.m* to filter out the background and only preserve the foreground points. 
 
 #### Step 3. Run *detectGIF.m* to generate bounding box detection. 
 
