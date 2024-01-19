@@ -8,7 +8,9 @@ This folder contains functions developed for LiDAR background subtraction
 - b. *beams_elevation.mat* is Vertical Angles (ω) by Laser ID and Model, which can be found in the LiDAR Manual.
 
 #### Step 1. Run *Triangle Thresholding.m* to obtain the *range_thrld_matrix.mat* that stored the threshold value for each elevation-azimuth grid
-
+~~~
+ *Triangle_Hash_Based.m* is new version for *Triangle Thresholding*
+~~~
 #### Step 2. Run *Background Filter.m* to filter out the background and only preserve the foreground points. 
 
 #### Step 3. Run *detectGIF.m* to generate bounding box detection. 
