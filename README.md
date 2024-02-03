@@ -1,7 +1,7 @@
 # Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction
 
 
-Tianya "Terry" Zhang, Peter J. Jin, “Roadside LiDAR Vehicle Detection and Tracking Using Range and Intensity Background Subtraction”, Journal of Advanced Transportation, vol. 2022, Article ID 2771085, 14 pages, 2022.
+Tianya Terry Zhang, Peter J. Jin, “Roadside LiDAR Vehicle Detection and Tracking Using Range and Intensity Background Subtraction”, Journal of Advanced Transportation, vol. 2022, Article ID 2771085, 14 pages, 2022.
 
 <object data="https://arxiv.org/ftp/arxiv/papers/2201/2201.04756.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/TeRyZh/Roadside-LiDAR-Vehicle-Detection-and-Tracking-Background-Subtraction/blob/main/LiDAR_Object_Detection.pdf">
