@@ -106,6 +106,8 @@ for k = 1:length(myFiles)
 end
 
 %% train background range thresholds
+total_channel = 128;
+total_grid = 1800;
 dist_max = 200;
 
 range_thrld_matrix = ones(total_channel, total_grid) * dist_max;
